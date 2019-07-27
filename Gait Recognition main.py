@@ -106,6 +106,7 @@ def dummyposetrain():
         plot_img(img2, ipath)"""
 
     # change the directory to images folder to store the frames obtained from the training videos.
+    #if not present create a new directory in the same folder as the program.
     os.chdir(r"images")
     img_dir = os.getcwd()
     image_list, rhipl,lhipl,rkneel,lkneel,rwristl,lwristl,headl,pelvisl=[],[],[],[],[],[],[],[],[]
@@ -227,6 +228,7 @@ def dummyposetest():
             'left wrist'
         ]
     # Changing the directory again to images folder so that frames from the testing videos can be saved.
+    #if not present create a new directory in the same folder as the program.
     os.chdir(r"images")
     img_dir = os.getcwd()
     image_list, rhipl,lhipl,rkneel,lkneel,rwristl,lwristl,headl,pelvisl=[],[],[],[],[],[],[],[],[]
@@ -326,6 +328,7 @@ import os
 inputValue=0
 def opentraining():
     # taking the user to the videos folder so that he/she can drop their videos there
+    # if not present create a new directory in the same folder as the program.
     os.system("start videos")
     # As long as a video is not given,do not start extracting frames from videos
     while os.listdir("videos")==[]:
