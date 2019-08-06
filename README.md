@@ -14,7 +14,7 @@ To run the program:
 8>The inserted test video's features is checked against the training dataset and the person with whom the error of the test video is the least,the person in the test video is assumed to be him/her.
 9>The result is obtained on the Python Shell or can be checked by clicking the result option.
 *Please take care that tkinter doesn't support MultiThreading.Please try to run the software with at the most two options used at a time.
-
+*Download a plain,white png image and name it as white.png
 Software used:
 1>numpy-1.16.4
 2>scipy<1.2.0
